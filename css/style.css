@@ -1,0 +1,171 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-54019.jpg?w=1800&t=st=1728479382~exp=1728479982~hmac=0d83e08a25fd4f400fbeefe2e34b5a6db904e8d48df783a261d50da630a5c35f');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin: 0;
+    text-align: center;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Hover Effect for Links */
+a:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Section Styles */
+.introduction {
+    background-color: #f4f4f4;
+    padding: 2rem 0;
+}
+
+.py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.bg-gray-100 {
+    background-color: #f7f7f7;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: white;
+}
+
+.bg-primary {
+    background-color: #2596be !important;
+}
+
+.text-primary {
+    color: #2596be !important;
+}
+
+.text-purple {
+    color: #6F42C1 !important;
+}
+
+.bg-primary-dark {
+    background-color: #5BE86A !important;
+}
+
+.dark-bg-primary {
+    background-color: #6F42C1 !important;
+}
+
+.dark:hover-bg-primary {
+    background-color: #563d7c !important;
+}
+
+.focus\:ring-blue-300 {
+    border-color: #2596be !important;
+}
+
+.focus\:ring-purple-200 {
+    border-color: #6F42C1 !important;
+}
+
+.hover-bg-lightblue-200 {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+.hover-text-purple-700 {
+    color: #6F42C1;
+}
+
+/* Margin Classes */
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.footer {
+    background-color: #5BE86A;
+    color: white;
+}
+
+
+
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow:  0px 0px 100px 10px #5BE86A;
+    
+}
+
+.card {
+    transition: transform 0.3s ease-in-out;
+    opacity: 0; 
+    transform: translateY(20px); 
+}
+
+.card.visible {
+    opacity: 1; 
+    transform: translateY(0); 
+    animation: fadeIn 0.5s ease-in-out; 
+}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+
+#myModal {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
